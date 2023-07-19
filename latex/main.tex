@@ -1,0 +1,87 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage[english]{babel}
+\usepackage{booktabs}
+\usepackage[labelfont=bf, font=small]{caption}
+\usepackage{chngcntr}
+\usepackage{color, colortbl}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{listings}
+\usepackage{microtype}
+\usepackage[numbers]{natbib}
+\usepackage{parskip}
+\usepackage{subcaption}
+\usepackage[most]{tcolorbox}
+\usepackage{xcolor}
+
+\usepackage[vcentering,dvips]{geometry}
+\geometry{
+    papersize={7in,9in},
+    bottom=3pc,
+    top=5pc,
+    left=5pc,
+    right=5pc,
+    bmargin=4.5pc,
+    footskip=18pt,
+    headsep=25pt}
+
+
+\usepackage[
+  colorlinks=true,
+  linkcolor=black,
+  anchorcolor=black,
+  citecolor=black,
+  filecolor=black,
+  menucolor=black,
+  runcolor=black,
+  urlcolor=black]{hyperref}
+
+\setcounter{tocdepth}{2}
+
+\definecolor{Gray}{gray}{0.9}
+\newcommand{\dotscale}{0.7}
+
+\theoremstyle{definition}
+\renewcommand\qedsymbol{$\blacksquare$}
+\newtheorem{example}{Example}[section]
+
+% Section numbers in captions.
+\counterwithin{figure}{section}
+\counterwithin{table}{section}
+\counterwithin{example}{section}
+\counterwithin{algorithm}{section}
+
+\fancyhf{}
+\lhead{\leftmark}
+\rhead{\thepage}
+\pagestyle{fancy}
+
+\input{math_commands.tex}
+
+\title{An Introduction to Weighted Automata \\ in Machine Learning}
+\author{Awni Hannun\footnote{
+  Send correspondence to
+  \href{mailto:awni.hannun@gmail.com}{awni.hannun@gmail.com}}}
+
+\begin{document}
+
+\include{title}
+\include{toc}
+\include{introduction}
+\include{acceptors_and_transducers}
+\include{basic_operations}
+\include{advanced_operations}
+\include{differentiation_with_automata}
+\include{extended_examples}
+\include{acknowledge}
+\include{bibliography}
+
+\end{document}
